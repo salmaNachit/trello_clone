@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import './globals.css'
+import Modal from "@/components/Modal";
 
 const inter = Inter({ subsets: ['latin'] })
 
@@ -16,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className='bg-[#5F6F8]'>{children}</body>
+      <body className='bg-[#5F6F8]'>{children} <Modal/></body>
     </html>
   )
 }
